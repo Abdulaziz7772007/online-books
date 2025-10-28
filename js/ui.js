@@ -1,4 +1,4 @@
-import {  cardContainerEl, cardTemplateEl } from './html-selection.js'
+import { buyNumEl, cardContainerEl, cardTemplateEl } from './html-selection.js'
 
 export function add(id, books) {
 	const book = books.find(b => b.id === id)
@@ -29,20 +29,24 @@ export function buy(id, books) {
 	const alreadyBought = boughtBooks.some(b => b.id === book.id)
 
 	if (alreadyBought) {
-		alert(`${book.title} allaqachon sotib olingan!`)
-		return
+		boughtBooks = boughtBooks.filter(b => b.id !== book.id)
+		localStorage.setItem('boughtBooks', JSON.stringify(boughtBooks))
+		alert(`${book.title} sotib olinganlardan olib tashlandi!`)
+	} else {
+		boughtBooks.push(book)
+		localStorage.setItem('boughtBooks', JSON.stringify(boughtBooks))
+		alert(`${book.title} muvaffaqiyatli sotib olindi! 🛍`)
 	}
 
-	boughtBooks.push(book)
-	localStorage.setItem('boughtBooks', JSON.stringify(boughtBooks))
-	alert(`${book.title} muvaffaqiyatli sotib olindi! 🛍`)
+	buyNumEl.textContent = boughtBooks.length
 }
 
 export function ui(books) {
 	cardContainerEl.innerHTML = ''
 
 	const savedBooks = JSON.parse(localStorage.getItem('savedBooks')) || []
-
+	const boughtBooks = JSON.parse(localStorage.getItem('boughtBooks')) || []
+	buyNumEl.textContent = boughtBooks.length
 	books.forEach(book => {
 		const clone = cardTemplateEl.cloneNode(true).content
 
@@ -62,7 +66,26 @@ export function ui(books) {
 		categoryEl.textContent = book.category
 		descriptionEl.textContent = book.description
 		priceEl.textContent = `${book.price} so'm`
-		buyBtnEl.addEventListener('click', () => buy(book.id, books))
+
+		const isBought = boughtBooks.some(b => b.id === book.id)
+		buyBtnEl.textContent = isBought ? '✅ Sotib olingan' : '🛒 Sotib olish'
+		buyBtnEl.className = isBought
+			? 'bg-green-500 text-white px-3 py-1 rounded cursor-pointer'
+			: 'bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 cursor-pointer'
+
+		buyBtnEl.addEventListener('click', () => {
+			buy(book.id, books)
+
+			const updatedBought =
+				JSON.parse(localStorage.getItem('boughtBooks')) || []
+			const nowBought = updatedBought.some(b => b.id === book.id)
+
+			buyBtnEl.textContent = nowBought ? '✅ Sotib olingan' : '🛒 Sotib olish'
+			buyBtnEl.className = nowBought
+				? 'bg-green-500 text-white px-3 py-1 rounded cursor-pointer'
+				: 'bg-blue-500 text-white px-3 py-1 rounded  cursor-pointer'
+		})
+
 		const isSaved = savedBooks.some(b => b.id === book.id)
 		saveBtnEl.textContent = isSaved ? '❤' : '♡'
 		saveBtnEl.addEventListener('click', () => {
@@ -71,6 +94,16 @@ export function ui(books) {
 			const updatedSaved = JSON.parse(localStorage.getItem('savedBooks')) || []
 			const nowSaved = updatedSaved.some(b => b.id === book.id)
 			saveBtnEl.textContent = nowSaved ? '❤' : '♡'
+		})
+
+		const readBtnEl = clone.getElementById('read')
+
+		readBtnEl.addEventListener('click', () => {
+			if (book.pdf) {
+				window.open(book.pdf, '_blank') 
+			} else {
+				alert('Bu kitob uchun PDF mavjud emas 😔')
+			}
 		})
 
 		cardContainerEl.appendChild(clone)

@@ -7,7 +7,8 @@
 			"price": 45000,
 			"image": "/images/otkanKunlar.jpg",
 			"description": "O'zbek adabiyotining klassik asari bo'lib, Otabek va Kumushning muhabbat hikoyasini tasvirlaydi.",
-			"category": "Roman"
+			"category": "Roman",
+			"pdf":"/pdf/utgan_kunlar.pdf"
 		},
 		{
 			"id": 2,
@@ -16,7 +17,8 @@
 			"price": 40000,
 			"image": "/images/kechaVaKunduz.jpg",
 			"description": "Milliy uyg‘onish davrida yozilgan chuqur falsafiy asar, xalq taqdiri haqida hikoya qiladi.",
-			"category": "Roman"
+			"category": "Roman",
+			"pdf":"/pdf/KechaVaKunduzRoman.pdf"
 		},
 		{
 			"id": 3,
@@ -25,7 +27,8 @@
 			"price": 30000,
 			"image": "/images/SariqDevniMinib.jpg",
 			"description": "Bolalar adabiyotining eng sevimli asarlaridan biri, Alisherning sarguzashtlari haqida.",
-			"category": "Bolalar adabiyoti"
+			"category": "Bolalar adabiyoti",
+			"pdf":"/pdf/Sariq_devni_minib.pdf"
 		},
 		{
 			"id": 4,
@@ -34,7 +37,8 @@
 			"price": 38000,
 			"image": "/images/jinlarBazmi.jpg",
 			"description": "Insoniylik, halollik va ijtimoiy muammolar haqida yozilgan chuqur ma’naviy asar.",
-			"category": "Dramatik roman"
+			"category": "Dramatik roman",
+			"pdf": "/pdf/JinlarBazmi.pdf"
 		},
 		{
 			"id": 5,
@@ -43,7 +47,8 @@
 			"price": 50000,
 			"image": "/images/alkimyogar.jpg",
 			"description": "Santiago ismli cho‘ponning orzulari sari safaridan hikoya qiluvchi mashhur falsafiy roman.",
-			"category": "Xorij adabiyoti"
+			"category": "Xorij adabiyoti",
+			"pdf": "/pdf/alkimyogar.pdf"
 		},
 		{
 			"id": 6,
@@ -52,7 +57,8 @@
 			"price": 47000,
 			"image": "/images/1984.jpg",
 			"description": "Totalitar tuzum ostidagi hayotni tasvirlovchi siyosiy-fantastik roman.",
-			"category": "Fantastika"
+			"category": "Fantastika",
+			"pdf": "/pdf/1984.pdf"
 		},
 		{
 			"id": 7,
@@ -61,7 +67,8 @@
 			"price": 35000,
 			"image": "/images/molxona.jpg",
 			"description": "Insoniy jamiyatdagi siyosiy tizimlarni kinoya orqali ochib beruvchi allegorik asar.",
-			"category": "Satira"
+			"category": "Satira",
+			"pdf": "/pdf/Oruell_Molxona.pdf"
 		},
 		{
 			"id": 8,
@@ -70,7 +77,8 @@
 			"price": 28000,
 			"image": "/images/qiziquvchanMatmusa.jpg",
 			"description": "Shoirning eng mashhur she’riy to‘plamlaridan biri, milliy ruh va muhabbat kuylangan.",
-			"category": "She’riyat"
+			"category": "She’riyat",
+			"pdf": "/pdf/Qiziquvchan_matmusa.pdf"
 		}
 	]
 }

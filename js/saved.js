@@ -1,4 +1,4 @@
-import { saveCardTemplateEl, saveContainerEl } from './html-selection.js'
+import { buysEl, saveCardTemplateEl, saveContainerEl } from './html-selection.js'
 
 const savedBooks = JSON.parse(localStorage.getItem('savedBooks')) || []
 
@@ -19,6 +19,6 @@ savedBooks.forEach(book => {
 	category.textContent = book.category
 	description.textContent = book.description
 	price.textContent = book.price
-
+	buysEl.textContent = 
 	saveContainerEl.appendChild(clone)
 })

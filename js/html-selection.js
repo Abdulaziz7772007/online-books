@@ -1,19 +1,27 @@
 const cardTemplateEl = document.getElementById('cardTemplate'),
 	cardContainerEl = document.getElementById('cardContainer'),
-  saveCardTemplateEl = document.getElementById('saveCardTemplate'),
-  buyCardTemplateEl = document.getElementById('buyCardTemplate'),
-  saveContainerEl = document.getElementById('saveContainer'),
-  buyContainerEl = document.getElementById('buyContainer'),
+	saveCardTemplateEl = document.getElementById('saveCardTemplate'),
+	buyCardTemplateEl = document.getElementById('buyCardTemplate'),
+	saveContainerEl = document.getElementById('saveContainer'),
+	buyContainerEl = document.getElementById('buyContainer'),
 	saveBtnEl = document.getElementById('save'),
-	buyBtnEl = document.getElementById('buy')
+	buyBtnEl = document.getElementById('buy'),
+	buyNumEl = document.getElementById('buyNum'),
+	pricesEl = document.getElementById('price'),
+	buysEl = document.getElementById('buys'),
+	searchInputEl = document.getElementById('searchInput')
 
 export {
 	buyBtnEl,
+	buyCardTemplateEl,
+	buyContainerEl,
+	buyNumEl,
+	buysEl,
 	cardContainerEl,
 	cardTemplateEl,
+	pricesEl,
 	saveBtnEl,
 	saveCardTemplateEl,
 	saveContainerEl,
-	buyCardTemplateEl,
-	buyContainerEl
+	searchInputEl,
 }

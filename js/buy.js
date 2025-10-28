@@ -1,7 +1,7 @@
-import { buyCardTemplateEl, buyContainerEl } from './html-selection.js'
+import { buyCardTemplateEl, buyContainerEl, pricesEl } from './html-selection.js'
 
 const boughtBooks = JSON.parse(localStorage.getItem('boughtBooks')) || []
-
+let priceEl = 0
 boughtBooks.forEach(book => {
 	const clone = buyCardTemplateEl.cloneNode(true).content
 	
@@ -19,6 +19,7 @@ boughtBooks.forEach(book => {
 	category.textContent = book.category
 	description.textContent = book.description
 	price.textContent = book.price
-
+	priceEl=priceEl+book.price
+	pricesEl.textContent = priceEl
 	buyContainerEl.appendChild(clone)
 })
