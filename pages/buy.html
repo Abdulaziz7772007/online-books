@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sotib olinganlar</title>
+	<link rel="stylesheet" href="../css/output.css">
+</head>
+<body class="container">
+	<header class="flex container">		
+		<div class="navbar bg-base-100 shadow-md">
+			<div class="flex-1 mt-5 ml-10">
+				<button class="btn btn-neutral text-white">
+					<a href="../index.html" class="flex items-center gap-1">
+						<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.85355 3.14645C7.04882 3.34171 7.04882 3.65829 6.85355 3.85355L3.70711 7H12.5C12.7761 7 13 7.22386 13 7.5C13 7.77614 12.7761 8 12.5 8H3.70711L6.85355 11.1464C7.04882 11.3417 7.04882 11.6583 6.85355 11.8536C6.65829 12.0488 6.34171 12.0488 6.14645 11.8536L2.14645 7.85355C1.95118 7.65829 1.95118 7.34171 2.14645 7.14645L6.14645 3.14645C6.34171 2.95118 6.65829 2.95118 6.85355 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+						</svg>
+						Orqaga
+					</a>
+				</button>
+				<a href="../index.html" class="btn btn-ghost text-2xl">Kitoblar</a>
+			</div>
+			<div class="flex mt-5 gap-10 mr-10">
+				<a href="./save.html" class="btn">Sevimlilar❤️</a>
+				<a tabindex="0" href="./buy.html" role="button" class="btn btn-ghost btn-circle">
+					<div class="indicator"> 
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+						</svg>
+						<span class="badge badge-sm indicator-item">8</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<ul id="buyContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5"></ul>
+
+	<template id="buyCardTemplate">
+		<li class="flex items-center gap-3 bg-gray-100 p-3 rounded-lg shadow-xl">
+			<figure>
+				<img id="image" class="w-[100px] h-[130px] object-cover rounded-md" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title text-xl" id="title"></h2>
+				<h3 id="author" class="text-md"></h3>
+				<p>Janri: <b id="category"></b></p>
+				<p id="description" class="w-[200px] text-sm text-gray-600"></p>
+				<h4 class="text-yellow-500 flex items-center gap-1">
+					Narxi: <span id="price"></span> so'm
+				</h4>
+			</div>
+		</li>
+	</template>
+
+	<script type="module" src="../js/buy.js"></script>
+</body>
+</html>

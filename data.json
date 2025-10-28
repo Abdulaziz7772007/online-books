@@ -1,0 +1,76 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"title": "O'tkan Kunlar",
+			"author": "Abdulla Qodiriy",
+			"price": 45000,
+			"image": "/images/otkanKunlar.jpg",
+			"description": "O'zbek adabiyotining klassik asari bo'lib, Otabek va Kumushning muhabbat hikoyasini tasvirlaydi.",
+			"category": "Roman"
+		},
+		{
+			"id": 2,
+			"title": "Kecha va Kunduz",
+			"author": "Cho'lpon",
+			"price": 40000,
+			"image": "/images/kechaVaKunduz.jpg",
+			"description": "Milliy uyg‘onish davrida yozilgan chuqur falsafiy asar, xalq taqdiri haqida hikoya qiladi.",
+			"category": "Roman"
+		},
+		{
+			"id": 3,
+			"title": "Sariq devni minib",
+			"author": "Xudoyberdi To‘xtaboyev",
+			"price": 30000,
+			"image": "/images/SariqDevniMinib.jpg",
+			"description": "Bolalar adabiyotining eng sevimli asarlaridan biri, Alisherning sarguzashtlari haqida.",
+			"category": "Bolalar adabiyoti"
+		},
+		{
+			"id": 4,
+			"title": "Jinlar Bazmi",
+			"author": "Tog‘ay Murod",
+			"price": 38000,
+			"image": "/images/jinlarBazmi.jpg",
+			"description": "Insoniylik, halollik va ijtimoiy muammolar haqida yozilgan chuqur ma’naviy asar.",
+			"category": "Dramatik roman"
+		},
+		{
+			"id": 5,
+			"title": "Alkimyogar",
+			"author": "Paulo Coelho",
+			"price": 50000,
+			"image": "/images/alkimyogar.jpg",
+			"description": "Santiago ismli cho‘ponning orzulari sari safaridan hikoya qiluvchi mashhur falsafiy roman.",
+			"category": "Xorij adabiyoti"
+		},
+		{
+			"id": 6,
+			"title": "1984",
+			"author": "George Orwell",
+			"price": 47000,
+			"image": "/images/1984.jpg",
+			"description": "Totalitar tuzum ostidagi hayotni tasvirlovchi siyosiy-fantastik roman.",
+			"category": "Fantastika"
+		},
+		{
+			"id": 7,
+			"title": "Molxona",
+			"author": "George Orwell",
+			"price": 35000,
+			"image": "/images/molxona.jpg",
+			"description": "Insoniy jamiyatdagi siyosiy tizimlarni kinoya orqali ochib beruvchi allegorik asar.",
+			"category": "Satira"
+		},
+		{
+			"id": 8,
+			"title": "Qiziquvchan Matmusa",
+			"author": "Erkin Vohidov",
+			"price": 28000,
+			"image": "/images/qiziquvchanMatmusa.jpg",
+			"description": "Shoirning eng mashhur she’riy to‘plamlaridan biri, milliy ruh va muhabbat kuylangan.",
+			"category": "She’riyat"
+		}
+	]
+}
