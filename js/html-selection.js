@@ -8,8 +8,7 @@ const cardTemplateEl = document.getElementById('cardTemplate'),
 	buyBtnEl = document.getElementById('buy'),
 	buyNumEl = document.getElementById('buyNum'),
 	pricesEl = document.getElementById('price'),
-	buysEl = document.getElementById('buys'),
-	searchInputEl = document.getElementById('searchInput')
+	buysEl = document.getElementById('buys')
 
 export {
 	buyBtnEl,
@@ -23,5 +22,4 @@ export {
 	saveBtnEl,
 	saveCardTemplateEl,
 	saveContainerEl,
-	searchInputEl,
 }
