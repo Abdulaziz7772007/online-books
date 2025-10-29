@@ -27,7 +27,10 @@
 		</div>
 	</header>
 	<section >
-		<input type="text" class=" mt-5 ml-10 sm:ml-[300px] md:ml-[500px]" id="searchInput" placeholder="Search by title or author...">
+		<div class="flex items-center gap-5">
+			<h2 class="flex text-2xl items-center mt-5 ml-10 sm:ml-[300px] md:ml-[500px]">Qidirish: </h2>
+			<input type="text" class="mt-5 w-60 border rounded-2xl p-1 px-2" id="searchInput" placeholder="Search by title or author...">
+		</div>
 		<div class="container mx-auto px-5" >
 			<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5" id="cardContainer"></ul>
 		</div>
