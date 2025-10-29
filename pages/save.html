@@ -19,27 +19,28 @@
 		</div>
 	</header>
 	<template id="saveCardTemplate">
-		<li class="sm:flex items-center gap-3 text-black bg-gray-200 p-1 rounded-lg shadow-xl">
-			<figure >
-				<img id="image" class="w-[100px] mx-auto h-[130px] object-cover rounded-md"
+		<li class="  justify-center items-center gap-3 mt-5 text-black bg-gray-200 p-1 rounded-lg shadow-xl">
+			<figure class="flex-shrink-0  mx-auto w-[100px] ">
+				<img id="image" class="h-[150px]"
 					src=""
 					alt="" />
 			</figure>
 			<div class="card-body">
-				<h2 class="card-title text-2xl" id="title"></h2>
-				<h3 id="author" class="text-xl"></h3>
+				<h2 class="card-title flex h-[60px] flex-wrap text-2xl" id="title"></h2>
+				<h3 id="author" class="text-xl h-[50px] "></h3>
 				<p>Janri: <b id="category"></b></p>
-				<p id="description" class="w-[200px]"></p>
+				<p id="description" class="w-[200px] h-[100px]"></pid>
 				<h4 class="text-yellow-500 flex items-center gap-1">
 					Price:
 						<span id="price"></span>
-						so'm
+						
 				</h4>
+				
 			</div>
 		</li>
 	</template>
-	<div class="container mx-auto px-5" >
-			<ul class="grid grid-cols-1 mt-5 md:grid-cols-2 lg:grid-cols-3  gap-5" id="saveContainer"></ul>
+	<div class="container  mx-auto px-5" >
+			<ul class="grid  h-[150px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5" id="saveContainer"></ul>
 		</div>
 	</section>
 	<script type="module" src="../js/saved.js"></script>

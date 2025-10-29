@@ -20,20 +20,26 @@
 	</header>
 	<h3 class="text-xl items-center text-center" >Price: <span id="price">0</span> </h3>
 
+<div class="container mx-auto px-5">
 	<ul id="buyContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5"></ul>
 
+</div>
 	<template id="buyCardTemplate">
-		<li class="sm:flex items-center gap-3 text-black bg-gray-100 p-3 rounded-lg shadow-xl">
-			<figure>
-				<img id="image" class="w-[100px] mx-auto  object-cover rounded-md" />
+		<li class="  justify-center items-center gap-3 w-[300px] mt-5 text-black bg-gray-200 p-1 rounded-lg shadow-xl">
+			<figure class="flex-shrink-0  mx-auto w-[100px] ">
+				<img id="image" class="h-[150px]"
+					src=""
+					alt="" />
 			</figure>
 			<div class="card-body">
-				<h2 class="card-title text-xl" id="title"></h2>
-				<h3 id="author" class="text-md"></h3>
+				<h2 class="card-title flex h-[60px] flex-wrap text-2xl" id="title"></h2>
+				<h3 id="author" class="text-xl h-[50px] "></h3>
 				<p>Janri: <b id="category"></b></p>
-				<p id="description" class="w-[200px] text-sm text-gray-600"></p>
+				<p id="description" class="w-[200px] h-[100px]"></pid>
 				<h4 class="text-yellow-500 flex items-center gap-1">
-					Narxi: <span id="price"></span> 
+					Price:
+						<span id="price"></span>
+						
 				</h4>
 				<button id="unBuy" class="btn btn-error">Bekor qilish</button>
 			</div>

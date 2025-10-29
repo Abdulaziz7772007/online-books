@@ -75,7 +75,7 @@ export function ui(books) {
 			priceEl.textContent = `${book.price} so'm`
 
 			const isBought = boughtBooks.some(b => b.id === book.id)
-			buyBtnEl.textContent = isBought ? '✅ Sotib olingan' : '🛒 Sotib olish'
+			buyBtnEl.textContent = isBought ? '✅' : '🛒 '
 			buyBtnEl.className = isBought
 				? 'bg-green-500 text-white px-3 py-1 rounded cursor-pointer'
 				: 'bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 cursor-pointer'
@@ -87,7 +87,7 @@ export function ui(books) {
 					JSON.parse(localStorage.getItem('boughtBooks')) || []
 				const nowBought = updatedBought.some(b => b.id === book.id)
 
-				buyBtnEl.textContent = nowBought ? '✅ Sotib olingan' : '🛒 Sotib olish'
+				buyBtnEl.textContent = nowBought ? '✅ ' : '🛒 '
 				buyBtnEl.className = nowBought
 					? 'bg-green-500 text-white px-3 py-1 rounded cursor-pointer'
 					: 'bg-blue-500 text-white px-3 py-1 rounded  cursor-pointer'
