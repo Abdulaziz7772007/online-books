@@ -19,6 +19,5 @@ savedBooks.forEach(book => {
 	category.textContent = book.category
 	description.textContent = book.description
 	price.textContent = book.price
-	buysEl.textContent = 
 	saveContainerEl.appendChild(clone)
 })
